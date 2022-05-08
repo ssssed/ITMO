@@ -1,0 +1,32 @@
+.splide {
+  max-width: 1262px;
+  margin: 0 auto;
+}
+
+.splide__track {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.splide__slide {
+  margin: 0 auto;
+}
+
+.slider-item {
+  width: 97%;
+  min-height: 462px;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(1, 54, 157, 0.15);
+  border-radius: 5px;
+  margin: 0 auto;
+  padding-top: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.splide__pagination__page {
+  top: 35px;
+}

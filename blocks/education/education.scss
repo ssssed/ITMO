@@ -16,69 +16,82 @@
     }
 }
 
-.education__arrow {
-    width: 24px;
-    height: 24px;
-    margin-left: 12px;
-    background: center url(../../../images/arrow-down.svg);
-    display: inline-block;
-}
-
-.education__button {
-    margin: 0;
-    width: 50%;
-    text-transform: uppercase;
-    color: #FFF;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.67;
+.education__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
     letter-spacing: 0.1px;
-    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0 auto 20px;
+    max-width: 288px;
 }
 
-.education__button_active {
-    width: 53%;
-    height: 103%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #E0F0FF;
-    border-radius: 10px;
-    color: #000D26;
+@media screen and (min-width: 768px) {
+    .education__text {
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 690px;
+        margin-bottom: 40px;
+    }
 }
 
-.education__buttons-container {
-    width: 540px;
-    height: 60px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    border-radius: 10px;
-    border: 1px solid #E0F0FF;
-    box-sizing: border-box;
+@media screen and (min-width: 1200px) {
+    .education__text {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 60px;
+        max-width: 920px;
+    }
 }
 
 .education__container {
-    width: 1170px;
     display: flex;
     background: #FFFFFF;
     border-radius: 10px;
     padding: 30px;
-    width: 1170px;
-    margin: 0 auto 35px;
     justify-content: space-between;
     box-sizing: border-box;
+    width: 288px;
+    margin: 0 auto 16px;
+    flex-direction: column;
+    padding: 16px 16px 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .education__container {
+        width: 690px;
+        margin-bottom: 30px;
+        padding: 20px;
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .education__container {
+        width: 1169px;
+        padding: 30px;
+        margin-bottom: 35px;
+    }
 }
 
 .education__img {
-    width: 445px;
-    height: 364px;
+    width: 256px;
+    height: 160px;
 }
 
-.education__img_visible {
-    z-index: 2;
-    opacity: 1;
+@media screen and (min-width: 768px) {
+    .education__img {
+        width: 280px;
+        height: 282px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .education__img {
+        width: 445px;
+        height: 364px;
+    }
 }
 
 .education__img_absolute {
@@ -90,17 +103,26 @@
     z-index: -1;
 }
 
+.education__img_visible {
+    z-index: 2;
+    opacity: 1;
+}
+
 .education__img-container {
     position: relative;
 }
 
-.education__link {
-    text-decoration: none;
-    color: #000D26;
-    font-style: normal;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
+.education__list {
+    padding-left: 22px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .education__list {
+        margin: 0;
+    }
 }
 
 .education__list-item {
@@ -108,52 +130,138 @@
     font-weight: 400;
 }
 
-.education__programs {
-    margin-top: 0;
+.education__text-container {
+    color: #000D26;
     font-style: normal;
     font-weight: 600;
-    color: #000D26;
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.1px;
-}
-
-.education__text {
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    letter-spacing: 0.1px;
-    color: #FFFFFF;
-    margin: 30px 0px;
-    max-width: 920px;
-    margin: 0 auto 60px;
-}
-
-@media screen and (min-width: 425px) {
-    .education__text {
-        font-size: 14px;
-        line-height: 20px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .education__text {
-        font-size: 18px;
-        line-height: 30px;
-    }
-}
-
-.education__text-container {
-    max-width: 635px;
-    margin-right: 29px;
-    color: #000D26;
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.0588372px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    max-width: 256px;
+    margin: 12px 0 0;
+    order: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .education__text-container {
+        max-width: 340px;
+        margin: 0 30px 0 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .education__text-container {
+        max-width: 635px;
+        letter-spacing: 0.1px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.education__programs {
+    margin: 0 0 20px;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+}
+
+@media screen and (min-width: 768px) {
+    .education__programs {
+        margin: 0;
+    }
+}
+
+.education__link {
+    text-decoration: none;
+    color: #000D26;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .education__link {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .education__link {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.education__buttons-container {
+    width: 288px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #E0F0FF;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    .education__buttons-container {
+        width: 450px;
+        height: 44px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .education__buttons-container {
+        width: 540px;
+        height: 60px;
+    }
+}
+
+.education__button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+    width: 50%;
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .education__button {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .education__button {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.1px;
+    }
+}
+
+.education__button_active {
+    width: 53%;
+    height: 103%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0F0FF;
+    border-radius: 10px;
+    color: #000D26;
+    font-weight: 600;
 }
