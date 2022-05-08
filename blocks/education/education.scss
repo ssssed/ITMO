@@ -201,20 +201,6 @@
     }
 }
 
-.education__arrow {
-    width: 24px;
-    height: 24px;
-    margin-left: 12px;
-    background: center url(../../../images/arrow-down.svg);
-    display: inline-block;
-}
-
-@media screen and (min-width: 768px) {
-    .education__arrow {
-        margin-left: 15px;
-    }
-}
-
 .education__buttons-container {
     width: 288px;
     height: 40px;
